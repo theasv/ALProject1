@@ -51,4 +51,4 @@ table 50100 "Reward Level"
     begin
         Validate("Minimum Reward Points");
     end;
-} 
+}

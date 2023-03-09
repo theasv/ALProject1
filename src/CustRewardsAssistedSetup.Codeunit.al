@@ -15,8 +15,8 @@ codeunit 50102 "Cust Rewards Assisted Setup"
         myAppInfo: ModuleInfo;
         WizardTxt: Label 'Customer Rewards assisted setup guide';
         //GuidedExperienceType : Enum "Guided Experience Type";
-        GuidedExperienceType : Enum "Assisted Setup Group";
-        VideoCategory : Enum "Video Category";
+        GuidedExperienceType: Enum "Assisted Setup Group";
+        VideoCategory: Enum "Video Category";
     begin
         NavApp.GetCurrentModuleInfo(myAppInfo);
         CurrentGlobalLanguage := GlobalLanguage();

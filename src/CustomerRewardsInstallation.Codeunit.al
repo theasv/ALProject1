@@ -86,4 +86,4 @@ codeunit 50100 "Customer Rewards Installation"
                 Customer.Modify();
             until SalesHeader.Next() = 0;
     end;
-} 
+}

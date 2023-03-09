@@ -33,4 +33,4 @@ table 50101 "Activation Code Information"
             Clustered = true;
         }
     }
-} 
+}

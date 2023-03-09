@@ -247,7 +247,7 @@ page 50100 "Customer Rewards Wizard"
             Step := Step + 1;
         EnableControls();
     end;
-    
+
     local procedure FinishAndEnableCustomerRewards();
     var
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext Mgt";

@@ -89,7 +89,7 @@ codeunit 50101 "Customer Rewards Ext Mgt"
         if (GetHttpResponse(ActivationCode, ResponseText)) then begin
             JsonRepsonse.ReadFrom(ResponseText);
 
-            if (JsonRepsonse.SelectToken('ActivationResponse', Result)) then 
+            if (JsonRepsonse.SelectToken('ActivationResponse', Result)) then
                 if (Result.AsValue().AsText() = 'Success') then begin
                     if (ActivationCodeInfo.FindFirst()) then
                         ActivationCodeInfo.Delete();
@@ -98,7 +98,7 @@ codeunit 50101 "Customer Rewards Ext Mgt"
                     ActivationCodeInfo."Date Activated" := Today;
                     ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today);
                     ActivationCodeInfo.Insert();
-            end;
+                end;
         end;
     end;
 
